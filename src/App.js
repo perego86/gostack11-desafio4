@@ -70,7 +70,7 @@ export default function App() {
                     //testID={`repository-likes-1`}
                     testID={`repository-likes-${repository.id}`}
                   >
-                    {repository.likes} curtidas
+                    {repository.likes} curtida{(repository.likes>1 ? 's' : '')}
                   </Text>
                 </View>
 
