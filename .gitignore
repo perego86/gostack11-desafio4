@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OSX
 #
 .DS_Store
@@ -57,3 +58,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+=======
+node_modules
+>>>>>>> ff471460ed0848c44480f66b9e3ba8f6963e3ead
