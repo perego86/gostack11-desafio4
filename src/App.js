@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, {useEffect, useState} from "react";
-=======
-import React from "react";
->>>>>>> ff471460ed0848c44480f66b9e3ba8f6963e3ead
 
 import {
   SafeAreaView,
@@ -14,7 +10,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-<<<<<<< HEAD
 import api from './services/api'
 
 export default function App() {
@@ -38,17 +33,11 @@ export default function App() {
   
       setRepositories([...tempRepo]);
 
-=======
-export default function App() {
-  async function handleLikeRepository(id) {
-    // Implement "Like Repository" functionality
->>>>>>> ff471460ed0848c44480f66b9e3ba8f6963e3ead
   }
 
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
-<<<<<<< HEAD
       
       <SafeAreaView style={styles.container}>
           <FlatList
@@ -99,40 +88,6 @@ export default function App() {
               )}
           />
 
-=======
-      <SafeAreaView style={styles.container}>
-        <View style={styles.repositoryContainer}>
-          <Text style={styles.repository}>Repository 1</Text>
-
-          <View style={styles.techsContainer}>
-            <Text style={styles.tech}>
-              ReactJS
-            </Text>
-            <Text style={styles.tech}>
-              Node.js
-            </Text>
-          </View>
-
-          <View style={styles.likesContainer}>
-            <Text
-              style={styles.likeText}
-              // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
-              testID={`repository-likes-1`}
-            >
-              3 curtidas
-            </Text>
-          </View>
-
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => handleLikeRepository(1)}
-            // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
-            testID={`like-button-1`}
-          >
-            <Text style={styles.buttonText}>Curtir</Text>
-          </TouchableOpacity>
-        </View>
->>>>>>> ff471460ed0848c44480f66b9e3ba8f6963e3ead
       </SafeAreaView>
     </>
   );
